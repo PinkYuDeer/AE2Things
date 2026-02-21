@@ -11,6 +11,7 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.MinecraftForge;
 
 import org.lwjgl.input.Keyboard;
@@ -210,7 +211,14 @@ public class PatternPanel implements IAEBasePanel {
                     this.parent.getGuiLeft() + 220,
                     this.parent.getGuiTop() + 118,
                     Settings.ACTIONS,
-                    ActionItems.ENCODE));
+                    ActionItems.ENCODE) {
+
+                    @Override
+                    public String getMessage() {
+                        return super.getMessage() + "\n"
+                            + StatCollector.translateToLocal("ae2thing.gui.pattern_terminal.encode.alt");
+                    }
+                });
         this.gui.getButtonList()
             .add(
                 this.tabProcessButton = new GuiTabButton(

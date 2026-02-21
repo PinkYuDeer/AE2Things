@@ -84,6 +84,7 @@ ae2thing.gui.part_mana_import=ME魔力输入总线
 ae2thing.gui.infusion_terminal.crafting_pattern=注魔和坩埚样板
 ae2thing.gui.infusion_terminal.processing_pattern=蒸馏样板
 ae2thing.gui.fluid_packet_encoder=ME流体封包编码器
+ae2thing.gui.pattern_terminal.encode.alt=Alt + 点击: 将编码样板放入已高亮的接口槽位
 ae2thing.gui.pattern_rename=自定义名称
 ae2thing.gui.button.replan=重新规划合成任务
 ae2thing.gui.terminal_menu.page=当前页数: %s
